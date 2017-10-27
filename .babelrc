@@ -1,0 +1,28 @@
+{
+  "presets": [
+    "react",
+    "es2015"
+  ],
+  "plugins": [
+    "transform-object-assign",
+    "transform-function-bind",
+    "transform-object-rest-spread",
+    "transform-class-properties",
+    "transform-es2015-arrow-functions",
+    "syntax-dynamic-import",
+    ["module-alias", [
+      { "src": "./src/actions", "expose": "actions" },
+      { "src": "./src/styles", "expose": "styles" },
+      { "src": "./src/components", "expose": "components" },
+      { "src": "./src/constants", "expose": "constants" },
+      { "src": "./src/reducers", "expose": "reducers" },
+      { "src": "./src/store", "expose": "store" },
+    ]]
+  ],
+  "ignore": [
+    "dist/**/*.js",
+    "webpack.config.js",
+    "webpack.config.dev.js",
+    "bundle.js"
+  ]
+}
